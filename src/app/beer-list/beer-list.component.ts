@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Beer } from '../beer';
+import { BeerService } from '../beer.service';
 
 @Component({
   selector: 'app-beer-list',
@@ -7,7 +8,13 @@ import { Beer } from '../beer';
   styleUrls: ['./beer-list.component.css']
 })
 export class BeerListComponent implements OnInit {
-  constructor() {}
+  constructor(private beerService: BeerService) {}
 
-  ngOnInit() {}
+  ngOnInit(): void {
+    this.getBeers();
+  }
+
+  getBeers(): void {
+    this.beerService.getBeers().subscribe(data => console.log(data);
+  }
 }
