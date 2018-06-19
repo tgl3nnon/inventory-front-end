@@ -1,12 +1,16 @@
-<div id="beer-list">
-  <div *ngFor="let beer of beers">
-    <span> {{ beer.id}} </span>
-    <span> {{ beer.name }} </span>
-    <span> {{ beer.style }} </span>
-    <span> {{ beer.vol }}</span>
-    <span> {{ beer.quantity }}</span>
-    <span> {{ beer.bottleDate }}</span>
-    <span> {{ beer.brewery }}</span>
-    <span> {{ beer.location }}</span>
+<div class="col-md-8" id="beer-list-page">
+  <div class="col" id="beer-list">
+    <div *ngFor="let beer of beers">
+      <div class="row" id="each-beer">
+        <div class="col"> {{ beer.id }} </div>
+        <div class="col"> {{ beer.name }} </div>
+        <div class="col"> {{ beer.style }} </div>
+        <div class="col"> {{ beer.vol }}</div>
+        <div class="col"> {{ beer.quantity }}</div>
+        <div class="col"> {{ beer.bottleDate }}</div>
+        <div class="col"> {{ beer.brewery }}</div>
+        <div class="col"> {{ beer.location }}</div>
+      </div>
+    </div>
   </div>
 </div>
