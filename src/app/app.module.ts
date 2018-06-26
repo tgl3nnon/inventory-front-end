@@ -8,9 +8,10 @@ import { AddBeerComponent } from './add-beer/add-beer.component';
 import { DeleteBeerComponent } from './delete-beer/delete-beer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, BeerListComponent, AddBeerComponent, DeleteBeerComponent, HomeComponent],
+  declarations: [AppComponent, NavBarComponent, BeerListComponent, AddBeerComponent, DeleteBeerComponent, HomeComponent, SidebarComponent],
   imports: [BrowserModule, HttpClientModule, CollapseModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent]
