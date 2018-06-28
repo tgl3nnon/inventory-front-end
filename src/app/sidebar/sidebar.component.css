@@ -1,5 +1,9 @@
 #side-bar {
+  background-color: #343a40 !important;
   border-style: solid;
   border-radius: 5px;
   padding: 5px 5px 5px 5px;
+}
+#side-bar-links {
+  color: whitesmoke;
 }
