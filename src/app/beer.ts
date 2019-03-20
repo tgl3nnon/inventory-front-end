@@ -1,3 +1,5 @@
+import { Brewery } from "./brewery";
+
 export class Beer {
   id: number;
   name: string;
@@ -5,6 +7,6 @@ export class Beer {
   vol: number;
   quantity: number;
   bottleDate: number;
-  brewery: string;
+  //brewery: Brewery;
   location: string;
 }
